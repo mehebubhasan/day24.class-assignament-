@@ -1,0 +1,314 @@
+body{
+    font-family: 'Spartan', sans-serif;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+li{
+    list-style-type: none;
+}
+
+
+
+/* main css start */
+
+
+/* Header css Start */
+.header{
+    background-color: #e7e6e6;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.logo a img{
+    width: 100px;
+}
+.header-menu {
+    line-height: 43px;
+}
+.header-menu ul{
+    display: flex;
+    margin-bottom: 0px;
+
+}
+.header-menu ul li{
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+}
+.header-menu ul li div{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 30px;
+    background-color: #fff;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.header-menu ul li:hover .error{
+    opacity: 1;
+    visibility: visible;
+} 
+.header-menu ul li div h6 {
+    background-color: blue;
+    color: white;
+    padding: 31px 18px;
+    width: 186px;
+    margin-bottom: 0;
+}
+.header-menu ul li:first-child{
+    margin-left: 0px;
+}
+.header-menu ul li a{
+    padding: 10px 15px;
+    color: black;
+    position: relative;
+
+}
+.header-menu ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    transition: .4s;
+}
+.header-menu ul li a:hover:after{
+    width: 100%;
+}
+.header-menu ul li a.active,
+.header-menu ul li a:hover{
+    color: blue;
+}
+.header-btn a {
+    padding: 10px 20px;
+    background: white;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-top: 8px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+.header-btn a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    background-color: black;
+    transition: .3s;
+    z-index: -1;
+}
+
+.header-btn a:hover::after{
+    width: 100%;
+}
+
+.header-btn a:hover{
+    color: white;
+}
+
+/* Header css end */
+
+
+
+/* Hero css Start */
+.hero{
+    background-color: #edf6ff;
+    overflow: hidden;
+
+}
+.hero-content{
+    padding: 200px 0;
+}
+.hero-content h4{
+    font-weight: 600;
+    padding: 30px 0;
+}
+.hero-content a{
+    padding: 10px 20px;
+    color: white;
+    background-color: blue;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-top: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+    border: 1px solid blue;
+}
+.hero-content a:hover{
+    border: 1px solid blue;
+    color: black;
+    background-color: #fff;
+}
+.hero-img{
+    position: relative;
+}
+
+.hero-img img {
+    width: 706px;
+    height: 706px;
+    border-radius: 100%;
+    position: absolute;
+    top: -147px;
+    right: -344px;
+}
+/* Hero css end */
+
+
+
+/* Service Start */
+.service{
+    position: relative;
+}
+.service-header h6{
+    color: blue;
+
+}
+.service-header h1{
+    font-weight: 600;
+    position: relative;
+}
+.service-header h1::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: blue;
+
+}
+.service-card {
+    padding: 30px;
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px -9px black;
+    position: relative;
+    transition: .5s;
+    background-color: #fff;
+}
+.service-img {
+    position: absolute;
+    bottom: 63px;
+    left: 256px;
+}
+/* .sevice-parten{
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+} */
+.service-card:hover{
+    transform: scale(1.1);
+    background-color: blue;
+    color: white;
+}
+.service-card:hover .icon{
+    background-color: #fff;
+}
+
+.service-card .icon{
+    margin: 20px 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px 50px 50px 0px;
+    background-color: blue;
+    position: relative;
+    transition: .5s;
+}
+.service-card .icon::after {
+    content: "";
+    width: 33px;
+    height: 4px;
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    background-color: blue;
+    transition: .5s;
+}
+.service-card:hover .icon::after{
+    background-color: #fff;
+    width: 70px;
+}
+/* Service end */
+
+
+
+/* oudio css start */
+.oudio{
+    background:linear-gradient(#424d68c9, #424d68bb), url(./img/video-bg.jpg) no-repeat ;
+    background-size: cover;
+    padding: 300px;
+}
+.audio-contant h1{
+    position: relative;
+}
+.audio-contant h1::after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 39%;
+    width: 137px;
+    height: 3px;
+    background-color: #fff;
+}
+.bottom-icon{
+    width: 100px;
+    margin-top: 70px;
+    line-height: 100px;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+.bottom-icon::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: 3px solid #ddd;
+    animation: bottom-icon 1.5s ease-out infinite;
+}
+@keyframes bottom-icon{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    30%{
+        transform: scale(.9);
+        opacity: .8;
+    }
+    60%{
+        transform: scale(1.8);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.bottom-icon svg{
+    width: 50px;
+    text-align: center;
+}
+.bottom-icon svg:hover{
+    background-color: black;
+    color: white;
+}
+
+/* oudio css End */
